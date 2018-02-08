@@ -30,7 +30,7 @@ class AccelerometerSensorListener(PythonJavaClass):
     def enable(self):
         self.SensorManager.registerListener(
             self, self.sensor,
-            SensorManager.SENSOR_DELAY_GAME
+            10000
         )
 
     def disable(self):
